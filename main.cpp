@@ -29,7 +29,7 @@ int main()
       wait(1);
 
     // PWM
-    PWM1.period(0.001f);      // 4 second period
+    PWM1.period(0.001f);      //  freq = 1000hz
 
     while (1) {
         for (float i = 0.0f; i <= 1.0f; i += 0.1f) {
@@ -46,7 +46,4 @@ int main()
             wait(0.1);
         }
     }
-
-     
-
 }
