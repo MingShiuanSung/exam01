@@ -8,12 +8,11 @@
 uLCD_4DGL uLCD(D1, D0, D2);
 
 // PWM
-PwmOut PWM1(D0);
+PwmOut PWM1(D6);
 AnalogIn Ain(A0);
 
 // data to pc
 Serial pc( USBTX, USBRX );
-AnalogIn Ain(A0);
 float ADCdata;
 
 
@@ -27,6 +26,7 @@ int main()
       uLCD.line(40 , 20, 40, 50, 0xFFFFFF);
       uLCD.line(10 , 20, 40, 20, 0xFFFFFF);
       uLCD.line(10 , 50, 40, 50, 0xFFFFFF);
+      wait(1);
 
     // PWM
     PWM1.period(0.001f);      // 4 second period
