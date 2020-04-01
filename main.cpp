@@ -8,7 +8,7 @@
 uLCD_4DGL uLCD(D1, D0, D2);
 
 // PWM
-PwmOut PWM1(D6);
+PwmOut PWM1(D7);
 AnalogIn Ain(A0);
 
 // data to pc
